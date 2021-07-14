@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a  href="index.html">Addition</a>
+        <a href="subtraction.html">Substraction</a>
+        <a href="multi.html">Multiplication</a>
+        <a class="active" href="div.html">Division</a>
+        <a  href="https://englishbolega.com/games/">Play More games</a>
+
+    </div>
+    <center><h1>This is the Javascript program for the Division of two numbers</h1></center>
+
+    <div id="wrapper">
+
+        <div id="content">
+            <div id="input">
+                <pre>
+                    <h3>
+    import java.util.scanner;                   //This is the Java library function
+        class div                              //function call
+    {
+        public static void main(String[] arg)
+            {
+            int a,b,c;
+            Scanner sc=new Scanner(System.in);
+                System.out.println("Enter first number  :"<input type="number" name="int1" id="fn">  );            //Enter the first value
+                a=sc.nextInt();
+                System.out.println("Enter second number :"<input type="number" name="int2" id="sn">     );          //Enter the second value
+                b=sc.nextInt();
+                c=addition(a,b);
+        System.out.println(" division of two numbers is : "+c);
+            }
+            static int division(int x,int y)
+            {
+	            return x <div id="/" class="checked" onclick="div()">/</div>y;               //Click here to get the result
+            }
+    }
+    var sum;
+    function div() {                                             //The divition operation is carried out in the below statements
+        var int1 = document.getElementById("fn").value;
+        int1 = parseInt(int1);
+        var int2 = document.getElementById("sn").value;
+        int2 = parseInt(int2);
+        sum = int1 / int2;
+        document.getElementById("rez").innerHTML = "The result of division is:  " + (sum);
+        document.getElementById("rez").style.display = "flex";
+    }
+                     </h3>
+               </pre>
+   
+               
+            </div>
+            <!--end #input-->
+
+
+            <div id="button" onclick="exe()">Reset</div>
+            <p id="rez"></p>
+
+        </div>
+        <!--end #content-->
+
+    </div>
+    <!--end #wrapper-->
+
+    <script>
+
+        var sum;
+       
+
+        function div() {
+
+            var int1 = document.getElementById("fn").value;
+            int1 = parseInt(int1);
+            var int2 = document.getElementById("sn").value;
+            int2 = parseInt(int2);
+            sum = int1 / int2;
+            document.getElementById("rez").innerHTML = "The result of division is:  " + (sum);
+            document.getElementById("rez").style.display = "flex";
+
+
+        }
+
+     
+
+
+
+        function exe() {
+            window.location.reload();
+        }
+
+    </script>
+
+</body>
+
+</html>
